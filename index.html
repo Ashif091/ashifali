@@ -123,6 +123,16 @@
 
 
     }
+    #sub_button{
+      background-color: aqua;
+      border: 2px solid rgb(228, 77, 38) ;
+      border-radius: 12px;
+    }
+    #sub_button:hover{
+      background-color: rgb(169, 227, 227);
+      border: 2px solid rgb(163, 47, 18) ;
+      border-radius: 12px;
+    }
     
 
 
@@ -527,7 +537,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="./index.html" method="post" role="form" class="php-email-form" onsubmit="return validation()">
+            <form action="https://formspree.io/f/meqbeoak" method="post" role="form" onsubmit="return validation()">
               <div class="row">
                 <div style="position: relative;" class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -553,11 +563,11 @@
                 <textarea class="form-control" name="message" rows="10" id="usermsg" ></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button id="sub_button" type="submit">Send Message</button></div>
             </form>
           </div>
 
