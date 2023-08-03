@@ -36,10 +36,19 @@ function validation(){
 
     }
     // end_user name
+    let arr = useremail;
+    let text=arr.value.match("@gmail.com");
+    if(!text){
+        document.getElementById("validmail").innerHTML="Enter the valid Email";
+        useremail.style.border="2px solid red";
+        validcondition=0;
+        return false;
+
+    }
     if(useremail.value==''){
         useremail.style.border="2px solid red";
         
-        document.getElementById("validmail").innerHTML="Enter the mail with @"
+        document.getElementById("validmail").innerHTML="Enter the valid Email";
         validcondition=0;
         return false;
     }
